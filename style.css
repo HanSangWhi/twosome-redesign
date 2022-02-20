@@ -493,51 +493,66 @@ label[for] {
 }
 
 /* 스와이퍼 */
-.banner-2 .swiper{
+.banner-2 .con .swiper{
   width:1112px;
   height: 500px;
 
 }
 
-.banner-2 .swiper .swiper-wrapper{
+.banner-2 .con .swiper .swiper-wrapper{
   align-items: flex-end;
   justify-content: flex-start;
 }
 
-.banner-2 .swiper .swiper-wrapper .swiper-slide>img{
+.banner-2 .con .swiper .swiper-wrapper .swiper-slide>img{
 
 }
 
-.banner-2 .swiper .swiper-wrapper .swiper-slide{
+.banner-2 .con .swiper .swiper-wrapper .swiper-slide{
   height: 150px;
 }
 
-.banner-2 .swiper .swiper-wrapper .swiper-slide.swiper-slide-active>img{
+.banner-2 .con .swiper .swiper-wrapper .swiper-slide.swiper-slide-active>img{
   width: 500px !important;
   height: 500px !important;
   overflow: visible;
 }
 
-.banner-2 .swiper .swiper-wrapper .swiper-slide.swiper-slide-active{
+.banner-2 .con .swiper .swiper-wrapper .swiper-slide.swiper-slide-active{
   height: 500px;
 }
 
 
-.banner-2 .swiper{
+.banner-2 .con .swiper{
   position: absolute;
   top:50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
 
-.banner-2 .swiper .swiper-button-next{
+.banner-2 .con .swiper .swiper-button-next{
   position:absolute;
   top:70%;
 }
 
+/* 왼쪽 메뉴3개 */
+
+
+/* 왼쪽메뉴 3개 글자 호버 */
+.banner-2 .con .taps>div.active{
+  text-decoration: underline;
+  color: #C7b198
+}
+
+
+/* 왼쪽메뉴 3개 글자 */
+.banner-2 .con .taps ul>li{
+  font-size: 36px;
+  color: #898989;
+}
 
 /* 메뉴 스토리 */
-.con{
+.con2{
   position: absolute;
   top:30%;
   left:60%;
