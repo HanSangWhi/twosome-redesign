@@ -492,58 +492,151 @@ label[for] {
   top:58%;
 }
 
-/* 스와이퍼 */
-.banner-2 .con .swiper{
-  width:1112px;
-  height: 500px;
-
+/* 스와이퍼 박스 1*/
+.banner-2 .con .swiper-con .swiper-box1 .swiper{
+  width:1100px;
+  height:400px;
+  /* left:40%; */
+  /* position:absolute; */
 }
 
-.banner-2 .con .swiper .swiper-wrapper{
+.banner-2 .con .swiper-con .swiper-box1 .swiper .swiper-wrapper{
   align-items: flex-end;
-  justify-content: flex-start;
 }
 
-.banner-2 .con .swiper .swiper-wrapper .swiper-slide>img{
-
+.banner-2 .con .swiper-con .swiper-box1 .swiper .swiper-wrapper .swiper-slide{
+  height: 200px;
 }
 
-.banner-2 .con .swiper .swiper-wrapper .swiper-slide{
-  height: 150px;
+.banner-2 .con .swiper-con .swiper-box1 .swiper .swiper-wrapper .swiper-slide>img{
+  width: 100%; 
+  height: 100%; 
 }
 
-.banner-2 .con .swiper .swiper-wrapper .swiper-slide.swiper-slide-active>img{
-  width: 500px !important;
-  height: 500px !important;
-  overflow: visible;
-}
-
-.banner-2 .con .swiper .swiper-wrapper .swiper-slide.swiper-slide-active{
-  height: 500px;
+.banner-2 .con .swiper-con .swiper-box1 .swiper .swiper-wrapper .swiper-slide.swiper-slide-active{
+  height: 100%;
+  width: 400px !important;
 }
 
 
-.banner-2 .con .swiper{
+.banner-2 .con .swiper-con .swiper-box1 .swiper{
   position: absolute;
   top:50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
 
-.banner-2 .con .swiper .swiper-button-next{
+.banner-2 .con .swiper-con .swiper-box1 .swiper .swiper-button-next{
   position:absolute;
   top:70%;
 }
 
-/* 왼쪽 메뉴3개 */
-
-
-/* 왼쪽메뉴 3개 글자 호버 */
-.banner-2 .con .taps>div.active{
-  text-decoration: underline;
-  color: #C7b198
+.banner-2 .con .swiper-con .swiper-box1 .swiper .swiper-button-next::after{
+  display:none;
 }
 
+/* 스와이퍼 박스 2*/
+.banner-2 .con .swiper-con .swiper-box2 .swiper{
+  width:1100px;
+  height:400px;
+
+}
+
+.banner-2 .con .swiper-con .swiper-box2 .swiper .swiper-wrapper{
+  align-items: flex-end;
+}
+
+.banner-2 .con .swiper-con .swiper-box2 .swiper .swiper-wrapper .swiper-slide{
+  height: 200px;
+}
+
+.banner-2 .con .swiper-con .swiper-box2 .swiper .swiper-wrapper .swiper-slide>img{
+  width: 100%; 
+  height: 100%; 
+}
+
+.banner-2 .con .swiper-con .swiper-box2 .swiper .swiper-wrapper .swiper-slide.swiper-slide-active{
+  height: 100%;
+  width: 400px !important;
+}
+
+
+.banner-2 .con .swiper-con .swiper-box2 .swiper{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.banner-2 .con .swiper-con .swiper-box2 .swiper .swiper-button-next{
+  position:absolute;
+  top:70%;
+}
+
+.banner-2 .con .swiper-con .swiper-box2 .swiper .swiper-button-next::after{
+  display:none;
+}
+
+/* 스와이퍼 박스 3*/
+.banner-2 .con .swiper-con .swiper-box3 .swiper{
+  width:1100px;
+  height:400px;
+
+}
+
+.banner-2 .con .swiper-con .swiper-box3 .swiper .swiper-wrapper{
+  align-items: flex-end;
+}
+
+.banner-2 .con .swiper-con .swiper-box3 .swiper .swiper-wrapper .swiper-slide{
+  height: 200px;
+}
+
+.banner-2 .con .swiper-con .swiper-box3 .swiper .swiper-wrapper .swiper-slide>img{
+  width: 100%; 
+  height: 100%; 
+}
+
+.banner-2 .con .swiper-con .swiper-box3 .swiper .swiper-wrapper .swiper-slide.swiper-slide-active{
+  height: 100%;
+  width: 400px !important;
+}
+
+
+.banner-2 .con .swiper-con .swiper-box3 .swiper{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.banner-2 .con .swiper-con .swiper-box3 .swiper .swiper-button-next{
+  position:absolute;
+  top:70%;
+}
+
+.banner-2 .con .swiper-con .swiper-box3 .swiper .swiper-button-next::after{
+  display:none;
+}
+
+/* 왼쪽 메뉴3개 */
+.banner-2 .con{
+  width:100%;
+  height: 100%;
+}
+
+.banner-2 .con .taps{
+  position: absolute;
+  width:400px;
+  height:500px;
+  top:24%;
+  left:40px;
+}
+
+.banner-2 .con .taps div{
+  font-size: 50px;
+  height:22%;
+}
 
 /* 왼쪽메뉴 3개 글자 */
 .banner-2 .con .taps ul>li{
@@ -551,11 +644,33 @@ label[for] {
   color: #898989;
 }
 
+/* 왼쪽메뉴 클릭시 */
+.banner-2 .con .taps div.active{
+  text-decoration: underline;
+  color: #C7b198;
+}
+
+.banner-2 .con .swiper-con>div{
+  display:none;
+}
+
+.banner-2 .con .swiper-con>div.active{
+  display: block;
+}
+
 /* 메뉴 스토리 */
-.con2{
+.banner-2 .con2{
   position: absolute;
   top:30%;
-  left:60%;
+  left:43%;
   z-index: 1;
-  
 }
+
+.banner-2 .con2 .menu-story>ul{
+  display:none;
+}
+
+.banner-2 .con2 .menu-story>ul.active{
+  display: block;
+}
+
