@@ -674,3 +674,8 @@ label[for] {
   display: block;
 }
 
+.swiper-slide-active .slide-1-txt {
+  position: absolute;
+  top:0;
+  right: -100%;
+}
