@@ -739,7 +739,7 @@ html {
   }
   
   /* 메뉴설명 box로 묶기 */
-  .coffee .menu-box{
+  .swiper-con .menu-box{
   width: 500px;
   height: 500px;
   position:absolute;
@@ -760,14 +760,20 @@ html {
   
   .dessert .swiper-slide-active .slide-txt{
     position: absolute;
-    top:20%;
-    right: -60%;
+    top:40%;
+    left:40%;
+    transform:translateX(-50%) translateY(-50%);
+    /* top:20%; */
+    /* right: -60%; */
   }
   
   /* 델리 문구 */
   
   .deli .swiper-slide-active .slide-txt{
     position: absolute;
-    top:20%;
-    right: -60%;
+    top:40%;
+    left:40%;
+    transform:translateX(-50%) translateY(-50%);
+    /* top:20%; */
+    /* right: -60%; */
   }

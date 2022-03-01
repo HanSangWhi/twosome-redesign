@@ -44,28 +44,12 @@ $(document).ready(function(){
   });
 });
 
-// 화살표를 눌렀을때 사진과 맞는 메뉴설명이 나오게하기
-$(document).ready(function(){
-  $(".banner-2 .con .swiper-con .swiper-box1 .swiper-button-next").click(function(){
-    if(Image == img2/banner2-coffee1.png){
-      $(".banner-2 .con2 .menu-1").addClass("active");
-    }else{
-      $("banner-2 .con2 .menu-1").removeClass("active");
-    }
-    if(Image == img2/banner2-coffee2.png){
-      $(".banner-2 .con2 .menu-2").addClass("active");
-    }else{
-      $("banner-2 .con2 .menu-2").removeClass("active");
-    }
-    if(Image == img2/banner2-coffee3.png){
-      $(".banner-2 .con2 .menu-3").addClass("active");
-    }else{
-      $("banner-2 .con2 .menu-3").removeClass("active");
-    }
-    if(Image == img2/banner2-coffee4.png){
-      $(".banner-2 .con2 .menu-4").addClass("active");
-    }else{
-      $("banner-2 .con2 .menu-4").removeClass("active");
-    }
+// 1페이지 2페이지 풀페이지 슬라이드
+
+$(document).ready(function() {
+  $("#fullpage").fullpage({
+    autoScrolling:true,
+    scrollHorizontally:true,
+
   });
 });
