@@ -777,3 +777,79 @@ html {
     /* top:20%; */
     /* right: -60%; */
   }
+
+  /*------------------ page3------------------------------------ */
+  
+  /* 탭메뉴 */
+  .banner-3 .tap-menu{
+    width:680px;
+    background-color: white;
+    position: absolute;
+    top:30%;
+    left:50%;
+  }
+
+  .banner-3 .tap-menu .btn-box{
+    display: flex;
+    font-size: 24px;
+  }
+
+  .banner-3 .tap-menu .btn-box div{
+    width: 50%;
+    text-align: right;
+    padding:10px 0;
+    border:2px solid black;
+
+  }
+
+  .banner-3 .tap-menu .btn-box>div.active{
+    color: red;
+    text-decoration: underline;
+  }
+
+  .banner-3 .tap-menu .content-box div{
+    padding:10px;
+    display:none;
+  }
+
+  .content-box .notice-content ul li{
+    padding: 10px 0;
+  }
+
+  .content-box .notice-content ul li a{
+    font-size: 24px;
+  }
+
+  .banner-3 .tap-menu .content-box div.active{
+    display: block;
+  }
+
+  /* 배너3 글씨&이미지 */
+  .banner-3-top{
+    width: 50%;
+    top:15%;
+    position:absolute;
+    left: 20%;
+  }
+
+
+  .banner-3-font{
+    display:flex;
+    padding-bottom:80px;
+  }
+
+  .banner-3-font div{
+    padding: 0 10px;
+    font-size: 90px;
+    font-weight: bold;
+  }
+
+  .banner-3-font div:nth-child(2){
+    color:#d60037;
+  }
+
+
+  .banner-3 .bottom-img{
+    bottom:0;
+    position:absolute;
+  }

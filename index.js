@@ -53,3 +53,19 @@ $(document).ready(function() {
 
   });
 });
+
+
+// 3페이지 탭메뉴
+$(document).ready(function(){
+  $('.tap-menu .btn-box>div').click(function(){
+
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+
+    var indexNum  = $(this).index();
+    console.log(indexNum);
+
+    $(".banner-3 .tap-menu .content-box>div").eq(indexNum).addClass("active");
+    $(".banner-3 .tap-menu .content-box>div").eq(indexNum).siblings().removeClass("active");
+  });
+});
