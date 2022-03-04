@@ -785,43 +785,62 @@ html {
     width:680px;
     background-color: white;
     position: absolute;
-    top:30%;
+    top:25%;
     left:50%;
   }
 
   .banner-3 .tap-menu .btn-box{
     display: flex;
     font-size: 24px;
+    justify-content: flex-end;
   }
 
   .banner-3 .tap-menu .btn-box div{
-    width: 50%;
+    width: 20%;
     text-align: right;
+    margin-bottom:45px;
     padding:10px 0;
-    border:2px solid black;
-
   }
 
   .banner-3 .tap-menu .btn-box>div.active{
     color: red;
     text-decoration: underline;
+    font-weight: bold;
   }
 
   .banner-3 .tap-menu .content-box div{
     padding:10px;
     display:none;
+    
   }
 
   .content-box .notice-content ul li{
-    padding: 10px 0;
+    padding: 20px 0;
   }
 
   .content-box .notice-content ul li a{
     font-size: 24px;
+    
   }
 
   .banner-3 .tap-menu .content-box div.active{
     display: block;
+    transition: 4s;
+  }
+
+  .content-box .notice-content ul li{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .content-box .notice-content ul li span{
+    color: #adadad;
+    font-size: 20px;
+  }
+
+  .tap-menu .btn-box>div:hover{
+    cursor:pointer;
   }
 
   /* 배너3 글씨&이미지 */
@@ -830,6 +849,7 @@ html {
     top:15%;
     position:absolute;
     left: 20%;
+    height:410px;
   }
 
 
@@ -848,8 +868,15 @@ html {
     color:#d60037;
   }
 
+  .banner-3 .notice-img img{
+    bottom:0;
+    position: absolute;
+  }
+
 
   .banner-3 .bottom-img{
     bottom:0;
     position:absolute;
   }
+  
+  
