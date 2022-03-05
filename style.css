@@ -313,6 +313,7 @@ html {
     align-self: flex-end;
   }
   
+
   *>.flex-column-nowrap {
     flex-flow: column nowrap;
   }
@@ -347,6 +348,7 @@ html {
     height: 80px;
     z-index: 2;
     position:relative;
+    background-color: #541212;
   }
   
   .top-bar .menu-box {
@@ -383,6 +385,8 @@ html {
     border-top: 1px solid #afafaf;
     display: none;
     padding: 50px 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
   
   .top-bar .menu-box>ul>li:hover>div {
@@ -878,5 +882,4 @@ html {
     bottom:0;
     position:absolute;
   }
-  
   
