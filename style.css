@@ -347,10 +347,18 @@ html {
   .top-bar {
     height: 80px;
     z-index: 2;
-    position:relative;
-    background-color: #541212;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    color:black;
   }
   
+  .fp-viewing-0 .top-bar{
+    background-color: #541212;
+    color:white;
+  }
+
   .top-bar .menu-box {
     margin-right: -200px;
   }
@@ -375,7 +383,8 @@ html {
   
   .top-bar .menu-box>ul>li:hover>a {
     border-bottom-color: black;
-  }
+    z-index: 1;
+    }
   
   .top-bar .menu-box>ul>li>div {
     position: absolute;
@@ -407,7 +416,6 @@ html {
   }
   
   .top-bar .menu-box>ul>li>div>div>ul>li>ul>li>a {
-    color: #444;
     font-size: .5rem;
   }
   
@@ -436,7 +444,8 @@ html {
   .top-bar .con>.top-bar-cover>img{
     position:absolute;
     left:0;
-    z-index: -1;
+    top:-20%;
+    z-index: 1;
   }
   
   /* 탑바 왼쪽 로고 */
@@ -462,6 +471,8 @@ html {
   /* 배너바 */
   .banner{
     position:relative;
+    left:0;
+    top:0;
   }
   
   .banner .banner-cover-txt>img{
@@ -482,15 +493,22 @@ html {
     top:74%;
     left: 47.5%;
   }
+
+  .banner .banner-cover{
+    width:100%;
+    height:100vh;
+  }
+
+  .banner .banner-cover > img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
   
   /* -------------------------page2 ----------------------*/
   
   /* 갈색 커버 */
-  .banner-2{
-    position:absolute;
-    height:100%;
-    width:100%;
-  }
+  
   .banner-2 .banner2-cover{
     position: absolute;
     top:58%;
@@ -883,3 +901,6 @@ html {
     position:absolute;
   }
   
+  .bottom-img > img {
+    display: block;
+  }
