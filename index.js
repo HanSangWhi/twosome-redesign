@@ -69,3 +69,10 @@ $(document).ready(function(){
     $(".banner-3 .tap-menu .content-box>div").eq(indexNum).siblings().removeClass("active");
   });
 });
+
+
+// 헤더연습(풀페이지)
+
+new fullpage('#fullpage', {
+  
+});
