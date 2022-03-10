@@ -313,7 +313,7 @@ html {
     align-self: flex-end;
   }
   
-
+  
   *>.flex-column-nowrap {
     flex-flow: column nowrap;
   }
@@ -426,7 +426,7 @@ html {
   
   .top-bar div.logo {
     margin-right: 10px;
-  }
+  } 
   
   .top-bar .menu-box>ul>li>a {
     font-size: 12px;
