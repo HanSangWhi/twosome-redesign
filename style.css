@@ -864,8 +864,11 @@ html {
 
   .banner-3 .tap-menu .content-box div{
     padding:10px;
-    display:none;
-    
+    visibility: hidden;
+  }
+
+  .banner-3 .tap-menu .content-box div:last-child{
+    background-color: green;
   }
 
   .content-box .notice-content ul li{
@@ -878,8 +881,8 @@ html {
   }
 
   .banner-3 .tap-menu .content-box div.active{
-    display: block;
-    transition: 4s;
+    visibility: visible;    
+    transition: 1s;
   }
 
   .content-box .notice-content ul li{
