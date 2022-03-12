@@ -867,23 +867,29 @@ html {
     visibility: hidden;
   }
 
-  .banner-3 .tap-menu .content-box div:last-child{
-    background-color: green;
-  }
-
   .content-box .notice-content ul li{
     padding: 20px 0;
   }
 
   .content-box .notice-content ul li a{
-    font-size: 24px;
-    
+    font-size: 24px; 
+  }
+
+    /* transition 넣으면 공지사항이나 보도자료 눌렀을떄 1초 느리게사라짐 */
+  .content-box div ul li a{
+    transition:1s;
+  }
+
+  .content-box div ul li:hover>a{
+    font-size: 25px;
+    transition: 1px;
   }
 
   .banner-3 .tap-menu .content-box div.active{
     visibility: visible;    
-    transition: 1s;
-  }
+    background-color: white;
+    
+   }
 
   .content-box .notice-content ul li{
     display:flex;
@@ -897,7 +903,7 @@ html {
   }
 
   .tap-menu .btn-box>div:hover{
-    cursor:pointer;
+    cursor : pointer;
   }
 
   /* 배너3 글씨&이미지 */
