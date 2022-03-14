@@ -11,39 +11,45 @@ body, ul, li{
     color: inherit;
   }
   /* 사이드바 */
-  
+
   .side-bar{
-    position: fixed;
-    right: -48%;
-    width: 50%;
-    border: 1px solid red;
-    height: 100%;
-    background-color: #dddddd;
-    transition: 1s;
+    position:fixed;
+    width: 13%;
+    height:1000px;
+    background-color: #890F0D;
+    right:-13%;
+    transition: right 1s;
   }
   
-  .side-bar:hover{
-    right: 0;
-    
+  .side-bar.active{
+    right:0;
   }
-  
+
   /* 로고메뉴바 */
-  
-  .logo-menu ul{
-    border: 2px solid black;
-    width: 250px;
+  .logo-menu{
+    position:absolute;
+    left:-20px;
+    top:50px;
   }
-  
-  .logo-menu ul ul{
-    border: 2px solid red;
+
+  .logo-menu>ul{
+    position:absolute;
+    left:0;
+  }
+
+  .logo-menu ul{
+    width: 200px;
     position: absolute;
-    left: 100%;
+    left:50px;
+  }
+
+  .logo-menu ul ul{
+    position: absolute;
+    left: -100%;
     top:0;
     display: none;
-  }
-  
-  .logo-menu ul ul ul{
-    border: 2px solid blue;
+    background-color: white;
+    color:black;
   }
   
   .logo-menu ul{
@@ -61,12 +67,23 @@ body, ul, li{
     transition: background-color .2s;
   }
   
-  .logo-menu ul>li:hover>a{
-    background-color: black;
+  .logo-menu>ul>li:hover>a{
+    color: white;
+    background-color:black;
+  }
+
+  .logo-menu ul ul>li:hover>a{
+    background-color:black;
     color: white;
   }
-  
+
   .logo-menu ul>li:hover>ul{
     display: block;
   }
   
+  /* 로고 메뉴 아이콘 관련 */
+
+  .side-bar .logo-btn{
+    top:0;
+    position:absolute;
+  }
