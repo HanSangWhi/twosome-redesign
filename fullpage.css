@@ -341,8 +341,7 @@ label[for] {
   height:1000px;
   background-color: #890F0D;
   right:-13%;
-  transition: right 1s;
-  border: 1px solid green;
+  transition: right .5s;
 }
 
 .side-bar.active{
@@ -352,26 +351,22 @@ label[for] {
 /* 로고메뉴바 */
 .logo-menu{
   position:absolute;
-  left:-20px;
   top:50px;
-  
-}
-
-.logo-menu ul{
-  width: 200px;
-  position: absolute;
-  left:50px;
+  width: 100%;
+  height: 100%;
 }
 
 .logo-menu>ul{
-  position:absolute;
-  
-  border: 1px solid red;
+width: 100%;
+left: 0; 
+position: absolute;
+top:15px;
 }
 
-.logo-menu ul ul{
+.logo-menu>ul ul{
   position: absolute;
   left: -100%;
+  width:100%;
   top:0;
   display: none;
   background-color: white;
@@ -388,7 +383,7 @@ label[for] {
 
 .logo-menu ul>li>a{
   font-weight:bold;
-  padding:10px;
+  padding:15px;
   display: block;
   transition: background-color .2s;
 }
@@ -407,15 +402,24 @@ label[for] {
   display: block;
 }
 
+/* 사이드바 로고 탑 박스 */
+
+.side-bar .top-box{
+  height: 35px;
+  background-color :#AD8B73
+}
+
 /* 로고 메뉴 아이콘 관련 */
 
 .side-bar .logo-btn{
-  top:0;
   position:absolute;
+  right:3px;
+  top:3px;  
 }
 
-
-
+.side-bar .logo-btn a>img{
+  width: 30px;  
+}
 
 
 
@@ -949,11 +953,13 @@ label[for] {
   font-weight: bold;
 }
 
+/* 공지사항, 보도자료 클릭시 그 아래 컨텐트 박스 나타나는 시간 */
+
 .banner-3 .tap-menu .content-box div {
   padding: 10px;
   visibility: hidden;
   opacity: 0;
-  transition: 1s;
+  transition: .7s;
 }
 
 .banner-3 .tap-menu .content-box div.active {
@@ -970,14 +976,17 @@ label[for] {
   font-size: 24px;
 }
 
-/* transition 넣으면 공지사항이나 보도자료 눌렀을떄 1초 느리게사라짐 */
+/* transition 넣으면 공지사항이나 보도자료 눌렀을떄 글씨관련된 시간 */
 .content-box div ul li a {
-  transition: 1s;
+  transition: .3s;
 }
 
 .content-box div ul li:hover>a {
   font-size: 25px;
-  transition: 1px;
+  text-shadow: #541212;
+  color: #524A4E;
+  font-weight: bold;
+
 }
 
 .content-box .notice-content ul li {
