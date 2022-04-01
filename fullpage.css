@@ -459,7 +459,7 @@ top:15px;
 }
 
 .con {
-  width: 1080px;
+  max-width: 1080px;
 }
 
 .top-bar {
@@ -477,9 +477,9 @@ top:15px;
   color: white;
 }
 
-.top-bar .menu-box {
-  margin-right: -200px;
-}
+/* .top-bar .menu-box {
+  
+} */
 
 .top-bar .menu-box>ul>li {
   margin: 0 5px;
@@ -579,6 +579,7 @@ top:15px;
   top: 50%;
   left: 0;
   transform: translateX(30%) translateY(-50%);
+  transition:3s;
 }
 
 .top-bar .con>.top-bar-logo-left2>img {
@@ -593,12 +594,14 @@ top:15px;
   position: absolute;
   left: 90%;
   top: 35%;
+  transition: .3s;
 }
 
 .top-bar .con>.top-bar-logo-right2>img {
   position: absolute;
   left: 90%;
   top: 35%;
+  transition:.3s;
 }
 
 
@@ -620,7 +623,6 @@ top:15px;
   top: 0;
 }
 
-/* 이거맞는지---- */
 .banner .top-bar-cover>img {
   position: absolute;
   top: -6%;
@@ -636,7 +638,6 @@ top:15px;
   position: absolute;
   top: 26%;
   left: 66%;
-
 }
 
 .banner .banner-txt-bottom>img {
@@ -813,7 +814,7 @@ top:15px;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: 1s;
+  transition: 0.9s;
 }
 
 
@@ -1175,18 +1176,90 @@ top:15px;
 /* 페이지에 따른 사이드바 배경색 조정하기 */
 
 .fp-viewing-1 .side-bar{
-  background-color: #630606;
+  background-color: #AD8B73;
 }
 
 /* 페이지에 따른 사이드바의 메뉴바 ul, li 조정하기 */
 
 .fp-viewing-1 .logo-menu ul ul>li{
-  background-color: #630606;
+  background-color: #DAB88B;
   color: white;
 }
 
 
 .fp-viewing-2 .logo-menu ul ul>li{
-  background-color: #890F0D;
+  background-color: #9B0000;
   color: white;  
+}
+
+
+
+/* 반응형작업 */
+
+/* 배너 왼쪽 글 작업 */
+@media(max-width: 1800px){
+  .banner-cover-txt{
+    visibility: hidden;
+    opacity: 0;
+    transition:.3s;
+  }
+}
+
+@media(min-width:1800px){
+  .banner-cover-txt{
+    visibility: visible;
+    opacity: 1;
+    transition: .3s
+  }
+}
+
+/* 사이드바, 오른쪽 로고 작업 */
+@media(max-width: 1600px){
+  .top-bar .side-bar, .top-bar .top-bar-logo-right, .top-bar .top-bar-logo-right2>img{
+    opacity: 0;
+    visibility: hidden;
+    transition:.3s;
+  }
+}
+
+@media(min-width: 1600px){
+  .top-bar .side-bar, .top-bar .top-bar-logo-right, .top-bar .top-bar-logo-right2>img{
+    opacity: 1;
+    visibility: visible;
+    transition:.3s;
+  }
+}
+
+/* 배너 오른쪽, 하단 글 작업 */
+@media(max-width:1200px){
+  .banner-txt-right, .banner-txt-bottom{
+    opacity:0;
+    visibility: hidden;
+    transition:.3s;
+  }
+}
+
+@media(min-width:1200px){
+  .banner-txt-right, .banner-txt-bottom{
+    opacity: 1;
+    visibility: visible;
+    transition:.3s;
+  }
+}
+
+
+@media(max-width: 900px){
+  .top-bar-logo-left, .top-bar-logo-left2{
+    opacity:0;
+    visibility: hidden;
+    transition:.3s;
+  }
+}
+
+@media(min-width: 900px){
+  .top-bar-logo-left, .top-bar-logo-left2{
+    opacity:1;
+    visibility: visible;
+    transition:.3s;
+  }
 }
