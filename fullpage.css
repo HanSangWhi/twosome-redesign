@@ -1263,3 +1263,110 @@ top:15px;
     transition:.3s;
   }
 }
+
+/* 메뉴박스 관련 반응형 */
+@media(max-width: 900px){
+  .menu-box{
+    display: none;
+  }
+}
+
+/* 모바일화면에서 보이는 메뉴박스(반응형) */
+
+.top-bar .tap-menu-wrap{
+  display:none;
+}
+
+@media(max-width:900px){
+  .top-bar .tap-menu-wrap{
+    display:block;
+  }
+}
+
+.tap-menu-wrap{
+  width:100%;
+}
+
+.tap-menu-wrap .btn-box{
+  display: flex;
+  flex-direction:column;
+  background-color: deepskyblue;
+}
+
+.tap-menu-wrap .btn-box>div{
+  padding: 10px;
+  color: white;
+  cursor:pointer;
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  text-align:center;
+  position: relative;
+}
+
+.tap-menu-wrap .btn-box>div:last-child{
+  border-bottom: none;
+}
+
+.tap-menu-wrap .btn-box>div.active{
+  background-color: #1565C0;
+  color: white;
+  height:80px;
+}
+
+/* 2차메뉴 가로로 */
+.tap-menu-wrap .content-box{
+  display: flex;
+}
+
+.tap-menu-wrap .content-box>div{
+  text-align:center;
+  font-weight:bold;
+  background-color: skyblue;
+  width: 100%;
+  border: 1px solid rgba(150, 150, 150, .5);
+  position: absolute;
+  visibility:hidden;
+  opacity:0;
+  transition: .3s; 
+} 
+
+.tap-menu-wrap .content-box>div>ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.tap-menu-wrap .content-box>div>ul>li>a{
+  padding: 10px;
+  font-size: 14px;
+}
+
+.tap-menu-wrap .content-box>div.active{
+  visibility:visible;
+  opacity:1;
+}
+
+.tap-menu-wrap .content-box .content1{
+  top:61px;
+}
+
+.tap-menu-wrap .content-box .content2{
+  top:107px;
+}
+
+.tap-menu-wrap .content-box .content3{
+  top:153px;
+}
+
+.tap-menu-wrap .content-box .content4{
+  top:199px;
+}
+
+.tap-menu-wrap .content-box .content5{
+  top:245px;
+}
+
+.tap-menu-wrap .content-box .content6{
+  top:289px;
+}
+
+

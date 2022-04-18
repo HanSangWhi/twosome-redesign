@@ -100,3 +100,18 @@ $(document).ready(function(){
     $(".side-bar").removeClass("active");
   });
 });
+
+// 모바일 메뉴박스(반응형)
+
+$(document).ready(function(){
+  $(".tap-menu-wrap>.btn-box>div").click(function(){
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+    
+    var indexNum = $(this).index();
+    console.log(indexNum);
+    
+    $(".tap-menu-wrap>.content-box>div").eq(indexNum).addClass("active");
+    $(".tap-menu-wrap>.content-box>div").eq(indexNum).siblings().removeClass("active");
+  });
+});
