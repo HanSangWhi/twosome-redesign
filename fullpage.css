@@ -1290,7 +1290,7 @@ top:15px;
 .tap-menu-wrap .btn-box{
   display: flex;
   flex-direction:column;
-  background-color: deepskyblue;
+  background-color: #890F0D;
 }
 
 .tap-menu-wrap .btn-box>div{
@@ -1308,9 +1308,10 @@ top:15px;
 }
 
 .tap-menu-wrap .btn-box>div.active{
-  background-color: #1565C0;
-  color: white;
+  background-color: #E3CAA5;
   height:80px;
+  font-weight: bold;
+  color:black;
 }
 
 /* 2차메뉴 가로로 */
@@ -1321,13 +1322,14 @@ top:15px;
 .tap-menu-wrap .content-box>div{
   text-align:center;
   font-weight:bold;
-  background-color: skyblue;
+  background-color: #FFFBE9;
   width: 100%;
   border: 1px solid rgba(150, 150, 150, .5);
   position: absolute;
   visibility:hidden;
   opacity:0;
   transition: .3s; 
+  color: black;
 } 
 
 .tap-menu-wrap .content-box>div>ul{
@@ -1339,6 +1341,7 @@ top:15px;
   padding: 10px;
   font-size: 14px;
 }
+
 
 .tap-menu-wrap .content-box>div.active{
   visibility:visible;
