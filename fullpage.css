@@ -881,13 +881,14 @@ top:15px;
   position: absolute;
   width: 400px;
   height: 500px;
-  top: 32%;
-  left: 15%;
+  top: 14%;
+  left: 3%; 
+  transition: .5s;
 }
 
 .banner-2 .con .taps div {
   font-size: 50px;
-  margin-top: 30px;
+  margin-top: 95px;
 }
 
 /* 왼쪽메뉴 3개 글자 */
@@ -906,11 +907,14 @@ top:15px;
 }
 
 .banner-2 .con .swiper-con>div {
-  display: none;
+  visibility:hidden;
+  opacity:0;
+  transition:.7s;
 }
 
 .banner-2 .con .swiper-con>div.active {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* 메뉴설명 box로 묶기 */
@@ -1290,12 +1294,12 @@ top:15px;
 .tap-menu-wrap .btn-box{
   display: flex;
   flex-direction:column;
-  background-color: #890F0D;  
+  background-color: #FFA1A1;  
 }
 
 .tap-menu-wrap .btn-box>div{
   padding: 10px;
-  color: white;
+  color: #FFF9F9;
   cursor:pointer;
   border-top: 1px solid rgba(255, 255, 255, .3);
   border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -1308,10 +1312,10 @@ top:15px;
 }
 
 .tap-menu-wrap .btn-box>div.active{
-  background-color: #8B9A46;
+  background-color: #630000;
   height:80px;
   font-weight: bold;
-  color:#19282F;
+  color:#FFF3E4;
 }
 
 /* 2차메뉴 가로로 */
@@ -1373,3 +1377,16 @@ top:15px;
 }
 
 
+/* 1380아래에서 btn메뉴바 안보이게하기 */
+@media(max-width: 1500px){
+  .banner-2 .taps{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@media(min-width: 1500px){
+  .banner-2 .taps{
+    visibility:visible;
+    opacity:1;
+  }
+}
