@@ -881,14 +881,14 @@ top:15px;
   position: absolute;
   width: 400px;
   height: 500px;
-  top: 14%;
+  top: 22%;
   left: 3%; 
   transition: .5s;
 }
 
 .banner-2 .con .taps div {
   font-size: 50px;
-  margin-top: 95px;
+  margin-top: 50px;
 }
 
 /* 왼쪽메뉴 3개 글자 */
@@ -1299,7 +1299,7 @@ top:15px;
 
 .tap-menu-wrap .btn-box>div{
   padding: 10px;
-  color: #FFF9F9;
+  color: #EFFFFD;
   cursor:pointer;
   border-top: 1px solid rgba(255, 255, 255, .3);
   border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -1350,6 +1350,12 @@ top:15px;
 .tap-menu-wrap .content-box>div.active{
   visibility:visible;
   opacity:1;
+}
+
+.tap-menu-wrap .content-box>div.active>ul>li:hover>a{
+  visibility:visible;
+  opacity:1;
+  color: #B22727;
 }
 
 .tap-menu-wrap .content-box .content1{
